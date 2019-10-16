@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/34816909cb.js" crossorigin="anonymous"></script>
     
     <link rel="stylesheet" href="style.css">
 </head>
@@ -19,8 +20,12 @@
             <div id="logo">GT</div>
             <nav>
                 <ul>
-                    <li><a class="link" href="#header">Home</a></li>
+                    <li><a class="link current" href="#intro">Home</a></li>
+                    <li><a class="link" href="#skills">Skills</a></li>
                     <li><a class="link" href="#portfolio">Projects</a></li>
+                    <li><a class="link" href="#contact">Contact</a></li>
+                    
+
                 </ul>
             </nav>
             <div id="mobile-menu">
@@ -28,7 +33,7 @@
         </div>
     </header>
 
-    <section id="intro" class="dark">
+    <section id="intro" class="dark anchor">
         <div id="intro-text">
             <span id="intro-name">Gertjan Tommelein</span>
             <span id="intro-role">Web Developer</span>
@@ -36,11 +41,25 @@
         <div id="bg" class="dark"></div>
         <img>
     </section>
-    <section id="divider">
+    <!-- <section class="divider">
         <span>Passie voor Web Development </span>
         <a href="./assets/Curriculum Vitae Gertjan 2.0.3.pdf" target="_blank"><div class="button">View my resumé <figure></figure></div></a>
+    </section>-->
+    <section id="skills" class="skills anchor">
+        <h2>Skills</h2>
+        <div class="skills-content">
+        <ul style="display:flex;">
+            <li style="text-align: center;"><i class="fab fa-html5 fa-7x"></i><h3>HTML</h3></li>
+            <li><i class="fab fa-css3-alt fa-7x"></i><h3>CSS</h3></li>
+            <li><i class="fab fa-js fa-7x"></i><h3>Javascript</h3></li>
+            <li><i class="fab fa-php fa-7x"></i><h3>PHP</h3></li>
+            <li><i class="fas fa-database fa-7x"></i><h3>MySQL</h3></li>
+            <li><i class="fab fa-git fa-7x"></i><h3>GIT</h3></li>
+        </ul>
+        
+    </div>
     </section>
-    <section id="portfolio">
+    <section id="portfolio" class="anchor">
         <h2>Projects</h2>
         <div class="projects">
             <div class="project-container">
@@ -95,10 +114,23 @@
                 </div>
         </div>
     </section>
+    <section id="contact" class="contact">
+        <div class="content-center">
+            <ul>
+                <li><a href="mailto:gertjantommelein@hotmail.com"><i class="fas fa-envelope-square fa-7x"></i></a><p><a class="links" href="mailto:gertjantommelein@hotmail.com">GertjanTommelein@hotmail.com</a></p></li>
+                <li><a href="https://github.com/Yazzheka" target="_blank"><i class="fab fa-github-square fa-7x"></i></a><p><a class="links" href="https://github.com/Yazzheka" target="_blank">Github/yazzheka.com</a></p></li>
+            </ul>
+        </div>
+    </section>
     <a href="#header"><div class="back-to-top-container">
         <div class="back-to-top"></div>
     </div></a>
+    <footer>Developed by Gertjan Tommelein</footer>
 </div>
-
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
