@@ -281,7 +281,7 @@ figure {
 .project-description span {
 
 }
-.project1 {
+.project {
     /*width:100%;
     height:100%;*/
     display:flex;
@@ -289,12 +289,12 @@ figure {
     flex-direction:column;
 
 }
-.project1 img {
+.project img {
     width:100%;
     height:auto;
     display:block;
 }
-.project1 .img-overlay {
+.project .img-overlay {
     position:absolute;
     width:100%;
     height:100%;
@@ -327,16 +327,6 @@ figure {
 .img-overlay:hover {
     /*transform:scale(1.05);*/
     opacity:1;
-}
-#project1 {
-    /*background-image:url("assets/images/quiz.PNG");
-    background-size:cover;
-    background-position:center center;*/
-}
-#project2{
-    /*background-image:url("assets/images/breakout.PNG");
-    background-size:cover;
-    background-position:center center;*/
 }
 #wrapper {
     display:flex;
