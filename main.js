@@ -3,8 +3,12 @@ var nav = document.querySelector("nav");
 var logo = document.getElementById("logo");
 var anchors = document.getElementsByClassName("link");
 var mobileMenu = document.getElementById("mobile-menu");
+var navLinks = document.getElementById("nav-links");
+
+
 
 window.onscroll = function(){
+    
     if(window.scrollY
          >= 60) {
         header.style.backgroundColor = "white";
@@ -12,9 +16,13 @@ window.onscroll = function(){
         this.logo.style.color = "white";
         this.logo.style.backgroundColor = "#333";
         this.mobileMenu.style.color = "#333";
-        this.header.style.boxShadow = "0 0.5px 6px #3333333b";
+        this.header.style.boxShadow = "0 0.5px 6px #3333333b";this.console.log(mobileMenu.getElementsByTagName("div"));
+        this.navLinks.style.borderTopLeftRadius = "0px";
         for(let i=0; i<this.anchors.length;i++){
             anchors[i].classList.remove("color-change");
+        }
+        for(let i=0; i<mobileMenu.getElementsByTagName("div").length;i++){
+            mobileMenu.getElementsByTagName("div")[i].style.backgroundColor = "#333";
         }
         
     }else {
@@ -24,26 +32,15 @@ window.onscroll = function(){
         this.logo.style.backgroundColor = "white";
         this.mobileMenu.style.color = "white";
         this.header.style.boxShadow = "0 0 0 #3333333b";
-         for(let i=0; i<this.anchors.length;i++){
+        this.navLinks.style.borderTopLeftRadius = "3px";
+        for(let i=0; i<this.anchors.length;i++){
              anchors[i].classList.add("color-change");
-         }
-
-    }
-}
-/*
-$(window).scroll(function(){
-    var scrollTop = $(document).scrollTop();
-    var anchors = $('body').find('.anchor');
-
-    for (var i = 0; i < anchors.length; i++){
-        if (scrollTop > $(anchors[i]).offset().top - 50 && scrollTop < $(anchors[i]).offset().top + $(anchors[i]).height() - 50) {
-            $(anchors[i]).addClass('active');
-        } else {
-            $(anchors[i]).removeClass('active');
+        }
+        for(let i=0; i<mobileMenu.getElementsByTagName("div").length;i++){
+            mobileMenu.getElementsByTagName("div")[i].style.backgroundColor = "white";
         }
     }
-});*/
-
+}
 
 $(window).scroll(function () {
     var position = window.pageYOffset;
@@ -56,4 +53,9 @@ $(window).scroll(function () {
         $('#header li a[href="#' + id + '"]').addClass('current');
       }
     });
+ });
+
+ $('#mobile-menu').on("click", function(){
+    $("#nav-links").toggleClass("show-mobile-nav");
+    
  });
