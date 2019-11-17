@@ -320,6 +320,13 @@ figure {
     position: relative;
     top:70px;
 }
+.img-overlay>.overlay-links>a {
+    padding:7px 20px;
+    background-color:deepskyblue;
+    position:relative;
+    top:20px;
+    border-radius:5px;
+}
 .img-overlay>a {
     padding:7px 20px;
     background-color:deepskyblue;
